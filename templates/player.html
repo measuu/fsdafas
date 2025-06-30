@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="/static/styles/styles_club.css">
+<h1 >🏆 Рейтинг найкращих гравців в історії CS🏆</h1>
+<div class="team-list">
+    <ol>
+        {% for team in teams %}
+        <a class="nav-link" href="{{ url_for('simple', team_name=team.name) }}">{{ team.nickname }}</a>
+        {% endfor %}
+    </ol>
+</div>
+{% endblock content %}

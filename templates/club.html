@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="/static/styles/styles_club.css">
+<h1 >🏆 Рейтинг найкращих команд в історії CS🏆</h1>
+<div class="team-list">
+    <ol>
+        <a class="nav-link" href="{{ url_for('navi', team_name=team.name) }}">{{ team.name }}</a>
+        <a class="nav-link" href="{{ url_for('fnatic', team_name=team1.name) }}">{{ team1.name }}</a>
+        <a class="nav-link" href="{{ url_for('nip', team_name=team2.name) }}">{{ team2.name }}</a>
+        <a class="nav-link" href="{{ url_for('cloude9', team_name=team3.name) }}">{{ team3.name }}</a>
+        <a class="nav-link" href="{{ url_for('astralis', team_name=team4.name) }}">{{ team4.name }}</a>
+        <a class="nav-link" href="{{ url_for('mouz', team_name=team5.name) }}">{{ team5.name }}</a>
+        <a class="nav-link" href="{{ url_for('gambit', team_name=team6.name) }}">{{ team6.name }}</a>
+        <a class="nav-link" href="{{ url_for('vitality', team_name=team7.name) }}">{{ team7.name }}</a>
+        <a class="nav-link" href="{{ url_for('g2', team_name=team8.name) }}">{{ team8.name }}</a>
+        <a class="nav-link" href="{{ url_for('faze', team_name=team9.name) }}">{{ team9.name }}</a>
+        <a class="nav-link" href="{{ url_for('liquid', team_name=team10.name) }}">{{ team10.name }}</a>
+        <a class="nav-link" href="{{ url_for('virtus', team_name=team11.name) }}">{{ team11.name }}</a>
+    </ol>
+</div>
+{% endblock content %}

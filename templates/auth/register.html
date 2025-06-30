@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}{{ name_restaurant }}{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="/static/styles/styles_register.css">
+<div class="center-wrapper">
+    <form method="post" class="registration-form">
+        <h2>Реєстрація</h2>
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+        <label>Ім'я користувача:</label>
+        <input type="text" name="username" required>
+
+        <label>Email користувача:</label>
+        <input type="email" name="email" required>
+
+        <label>Пароль:</label>
+        <input type="password" name="password" required>
+
+        <input type="submit" value="Зареєструватися">
+    </form>
+</div>
+{% endblock %}

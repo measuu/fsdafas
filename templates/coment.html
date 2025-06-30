@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="feedback-container">
+  <h2>Залиште ваш відгук про наш сайт</h2>
+  <form method="post" action="{{ url_for('coment') }}">
+    <label for="name">Ваше ім'я:</label>
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <input type="text" id="name" name="name" placeholder="Ім'я" required>
+
+    <label for="email">Ваш Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+    <label for="message">Відгук:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Ваш відгук..." required></textarea>
+
+    <button type="submit">Відправити</button>
+  </form>
+</div>
+
+<style>
+  /* Ті самі стилі з чорним фоном і жовтими акцентами */
+  .feedback-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #111;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 3px #ffeb3b;
+    color: #ffeb3b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .feedback-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #ffeb3b;
+    border-radius: 6px;
+    background: #222;
+    color: #ffeb3b;
+    font-size: 1rem;
+    transition: background 0.3s ease, border-color 0.3s ease;
+  }
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form textarea:focus {
+    background: #333;
+    border-color: #fff176;
+    outline: none;
+  }
+  form button {
+    background: #ffeb3b;
+    color: #111;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+  form button:hover {
+    background: #fbc02d;
+    color: #000;
+  }
+</style>
+{% endblock content %}

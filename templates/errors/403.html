@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}403 Forbidden{% endblock title %}
+{% block content %}
+<link rel="stylesheet" href="/static/styles/styles_403.css">
+<div class="error-container">
+    <h1 class="error-code">403</h1>
+    <p class="error-message">Access Denied – You are not an <span class="highlight">ADMIN</span></p>
+    <a href="/" class="btn">Return to Main Base</a>
+</div>
+{% endblock content %}

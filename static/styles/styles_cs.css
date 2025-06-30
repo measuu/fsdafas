@@ -1,0 +1,79 @@
+.cs-history-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #121212; /* темний фон */
+    padding: 25px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.25);
+    color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    border: 2px solid #ffcc00;
+}
+
+.cs-title {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+    font-family: 'Orbitron', sans-serif;
+    animation: glow 2s ease-in-out infinite;
+}
+
+.cs-history-text p {
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+    color: #f5f5dc;
+}
+
+.cs-history-text p:first-child {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #ffd700;
+    text-shadow: 0 0 4px #ffd700;
+}
+
+.cs-history-text p:last-child {
+    font-style: italic;
+    color: #fada5e;
+}
+
+.cs-facts {
+    background-color: #1b1b1b;
+    border-left: 5px solid #ffcc00;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.cs-facts h3 {
+    color: #ffcc00;
+    margin-bottom: 12px;
+}
+
+.cs-facts ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cs-facts li {
+    color: #ffcc00;
+    padding: 6px 0;
+    font-size: 1.05rem;
+    border-bottom: 1px dashed #2f2f2f;
+}
+
+.cs-history-text p:hover {
+    background-color: rgba(255, 204, 0, 0.07);
+    padding: 5px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+@keyframes glow {
+    0%   { text-shadow: 0 0 2px #ffcc00, 0 0 4px #ffcc00; }
+    50%  { text-shadow: 0 0 6px #ffcc00, 0 0 12px #ffd700; }
+    100% { text-shadow: 0 0 2px #ffcc00, 0 0 4px #ffcc00; }
+}

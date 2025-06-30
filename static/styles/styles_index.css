@@ -1,0 +1,69 @@
+body {
+    background: #0b0b0b;
+    color: #f2f2f2;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wiki-home-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #1a1a1a;
+    border: 2px solid #ffcc00;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(255, 204, 0, 0.2);
+}
+
+.wiki-title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #ffcc00;
+    text-shadow: 0 0 12px #ffcc00;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.wiki-intro-box {
+    background: #111111;
+    padding: 25px;
+    border-left: 6px solid #ffcc00;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    box-shadow: inset 0 0 15px rgba(255, 204, 0, 0.05);
+}
+
+.cs-highlight {
+    color: #ffe600;
+    font-weight: bold;
+}
+
+.cs-16 {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.cs2 {
+    color: #fff200;
+    font-weight: bold;
+}
+
+.start-tip {
+    margin-top: 20px;
+    font-style: italic;
+    color: #fada5e;
+}
+
+.wiki-terminal {
+    margin-top: 30px;
+    font-family: monospace;
+    background: #0d0d0d;
+    color: #ffcc00;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ffee58;
+    text-align: center;
+    font-size: 0.95rem;
+}

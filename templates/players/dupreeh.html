@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="/static/styles/players.css">
+<div class="player-detail">
+    <h2>{{ player.name }} ({{ player.nickname }})</h2>
+    <img src="{{ player.photo_url }}" alt="Фото {{ player.name }}">
+    <ul>
+        <li><strong>Вік:</strong> {{ player.age }}</li>
+        <li><strong>Кар'єра:</strong> {{ player.years }}</li>
+        <li><strong>Трофеї:</strong> {{ player.trophies }}</li>
+        <li><strong>MVP:</strong> {{ player.mvp }}</li>
+    </ul>
+    <p>{{ player.descr }}</p>
+</div>
+{% endblock %}

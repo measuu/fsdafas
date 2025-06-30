@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+.navbar {
+    background-color: #0f0f0f !important;
+    border-bottom: 2px solid #FFD700;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navbar-brand {
+    color: #FFD700 !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler {
+    border: 1px solid #FFD700;
+    background-color: #1a1a1a;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
+
+.nav-link {
+    color: #ffffff !important;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent 0%,
+        #FFD700 50%,
+        transparent 100%
+    );
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.nav-link:hover::before {
+    left: 100%;
+}
+
+.nav-link:hover {
+    color: #FFD700 !important;
+}
